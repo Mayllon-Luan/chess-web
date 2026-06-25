@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>História do Xadrez</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html">♚ Xadrez</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#historia">História</a></li>
+                <li><a href="../index.html#campeoes">Campeões</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1>História do Xadrez</h1>
+                <p>Uma linha do tempo com os marcos mais importantes da evolução do jogo.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-ano">séc. VI</div>
+                    <div class="timeline-desc">
+                        <h3>Origem na Índia</h3>
+                        <p>O <em>chaturanga</em> é o ancestral do xadrez, jogado com peças que representam exército indiano.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ano">séc. VII</div>
+                    <div class="timeline-desc">
+                        <h3>Chegada à Pérsia</h3>
+                        <p>O jogo é adotado pela corte persa, onde ganha o nome <em>shatranj</em> e se populariza entre a nobreza.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ano">séc. IX</div>
+                    <div class="timeline-desc">
+                        <h3>Expansão árabe</h3>
+                        <p>Os árabes levam o xadrez para o norte da África e para a Europa, através da Península Ibérica.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ano">séc. XV</div>
+                    <div class="timeline-desc">
+                        <h3>Regras modernas</h3>
+                        <p>Na Europa, a dama e o bispo ganham movimentos mais poderosos, dando origem ao xadrez que conhecemos hoje.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ano">1886</div>
+                    <div class="timeline-desc">
+                        <h3>Primeiro campeonato mundial</h3>
+                        <p>Wilhelm Steinitz vence Johannes Zukertort e se torna o primeiro campeão mundial oficial.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ano">1972</div>
+                    <div class="timeline-desc">
+                        <h3>Fischer x Spassky</h3>
+                        <p>A partida do século, disputada em Reykjavík, consagra Bobby Fischer como campeão em plena Guerra Fria.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ano">1997</div>
+                    <div class="timeline-desc">
+                        <h3>Deep Blue vence Kasparov</h3>
+                        <p>O computador da IBM derrota Garry Kasparov, marco na história da inteligência artificial.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-ano">2013</div>
+                    <div class="timeline-desc">
+                        <h3>Era Magnus Carlsen</h3>
+                        <p>O norueguês torna-se campeão mundial e quebra recordes de rating, dominando a década.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../index.html#historia" class="back-link">← Voltar para o início</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">♚ Xadrez</span>
+                    <p>Arte, estratégia e tradição em um só lugar.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html#inicio">Início</a></li>
+                        <li><a href="../templates/historia.html">História</a></li>
+                        <li><a href="../templates/campeoes.html">Campeões</a></li>
+                        <li><a href="../contato/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contato">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:mayllonmendesvera@gmail.com">✉ mayllonmendesvera@gmail.com</a></li>
+                        <li><a href="tel:+5589994043344">📞 +55 89 99404-3344</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Xadrez — Todos os direitos reservados.</p>
+                <p><a href="https://www.chess.com" target="_blank" rel="noopener">♟ Jogue online no Chess.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campeões Mundiais de Xadrez</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html">♚ Xadrez</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#historia">História</a></li>
+                <li><a href="../index.html#campeoes">Campeões</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1>Campeões Mundiais</h1>
+                <p>Os grandes mestres que dominaram o tabuleiro ao longo dos anos.</p>
+            </div>
+
+            <ul class="campeoes-lista">
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Magnus Carlsen</h3>
+                        <span>2013–2023 · Noruega</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Viswanathan Anand</h3>
+                        <span>2007–2013 · Índia</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Vladimir Kramnik</h3>
+                        <span>2000–2007 · Rússia</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Garry Kasparov</h3>
+                        <span>1985–2000 · Rússia</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Anatoly Karpov</h3>
+                        <span>1975–1985 · Rússia</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Bobby Fischer</h3>
+                        <span>1972–1975 · EUA</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Boris Spassky</h3>
+                        <span>1969–1972 · Rússia</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="campeao-avatar">♚</span>
+                    <div class="campeao-detalhe">
+                        <h3>Mikhail Tal</h3>
+                        <span>1960–1961 · Letônia</span>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="../index.html#campeoes" class="back-link">← Voltar para o início</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">♚ Xadrez</span>
+                    <p>Arte, estratégia e tradição em um só lugar.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html#inicio">Início</a></li>
+                        <li><a href="../templates/historia.html">História</a></li>
+                        <li><a href="../templates/campeoes.html">Campeões</a></li>
+                        <li><a href="../contato/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contato">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:mayllonmendesvera@gmail.com">✉ mayllonmendesvera@gmail.com</a></li>
+                        <li><a href="tel:+5589994043344">📞 +55 89 99404-3344</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Xadrez — Todos os direitos reservados.</p>
+                <p><a href="https://www.chess.com" target="_blank" rel="noopener">♟ Jogue online no Chess.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
