@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato — Xadrez</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html">♚ Xadrez</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#historia">História</a></li>
+                <li><a href="../index.html#campeoes">Campeões</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1>Fale conosco</h1>
+                <p>Estamos aqui para ouvir você! Envie sua mensagem ou utilize os canais abaixo.</p>
+            </div>
+
+            <!-- Lista de contato (obrigatória) -->
+            <div class="contato-grid" style="max-width:900px; margin:0 auto;">
+                <div class="contato-info">
+                    <h2 style="color:var(--dourado); font-size:1.8rem; margin-bottom:20px;">Nossos canais</h2>
+                    <ul>
+                        <li>
+                            <span class="contato-icon">✉</span>
+                            <a href="mailto:mayllonmendesvera@gmail.com">mayllonmendesvera@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contato-icon">📞</span>
+                            <a href="tel:+5589994043344">+55 89 99404-3344</a>
+                        </li>
+                        <li>
+                            <span class="contato-icon">🌐</span>
+                            <a href="https://www.chess.com" target="_blank" rel="noopener">Jogue online no Chess.com</a>
+                        </li>
+                        <li>
+                            <span class="contato-icon">📷</span>
+                            <a href="#">@xadrez_arte (Instagram)</a>
+                        </li>
+                    </ul>
+                    <p style="margin-top:24px; color:var(--cinza-claro);">
+                        <strong>Horário de atendimento:</strong> Seg–Sex, 9h–18h (UTC-3)
+                    </p>
+                    <!-- Botão gráfico (imagem clicável) -->
+                    <a href="https://www.chess.com" target="_blank" rel="noopener" style="display:inline-block; margin-top:16px;">
+                        <img
+                        src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=300&h=100&fit=crop&auto=format"
+                        alt="Jogue xadrez online"
+                        style="border-radius:12px; box-shadow: var(--sombra); transition: var(--transition); max-width:280px;"
+                        onmouseover="this.style.transform='scale(1.02)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                        />
+                    </a>
+                </div>
+                <div class="contato-form">
+                    <h3 style="color:var(--dourado); margin-bottom:16px;">Envie uma mensagem</h3>
+                    <form action="#" method="post">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome" />
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" />
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" placeholder="Assunto" />
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                        <button type="submit" class="btn-primary">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <a href="../index.html#contato" class="back-link">← Voltar para o início</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">♚ Xadrez</span>
+                    <p>Arte, estratégia e tradição em um só lugar.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html#inicio">Início</a></li>
+                        <li><a href="../templates/historia.html">História</a></li>
+                        <li><a href="../templates/campeoes.html">Campeões</a></li>
+                        <li><a href="../contato/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contato">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:mayllonmendesvera@gmail.com">✉ mayllonmendesvera@gmail.com</a></li>
+                        <li><a href="tel:+5589994043344">📞 +55 89 99404-3344</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Xadrez — Todos os direitos reservados.</p>
+                <p><a href="https://www.chess.com" target="_blank" rel="noopener">♟ Jogue online no Chess.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
